@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert title </title>
 </head>
 <body>
 	<jsp:forward page="member/main.do" />
