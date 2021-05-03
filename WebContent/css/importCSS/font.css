@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'RIDIBatang';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GmarketSansBold';
+	src: url("../fonts/GmarketSansTTFBold.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'GmarketSans';
+	src: url("../fonts/GmarketSansTTFMedium.ttf") format('truetype');
+}
+
+/* ============================================================================================================= */
+body {
+	font-family: 'GmarketSans';
+}
+
+.bold {
+	font-family: 'GmarketSansBold' !important;
+}
+
+/* 약관  글씨체*/
+.act01 {
+	font-family: 'RIDIBatang';
+}

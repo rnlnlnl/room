@@ -1,0 +1,26 @@
+﻿-- 테이블 순서는 관계를 고려하여 한 번에 실행해도 에러가 발생하지 않게 정렬되었습니다.
+
+-- member Table Create SQL
+CREATE TABLE member
+(
+    `id`    VARCHAR(45)    NOT NULL    COMMENT 'id', 
+    `pw`    VARCHAR(45)    NULL        COMMENT 'pw', 
+    `name`  VARCHAR(45)    NULL        COMMENT 'name', 
+    PRIMARY KEY (id)
+);
+
+
+-- member Table Create SQL
+CREATE TABLE board
+(
+    `boardnum`  VARCHAR(45)    NOT NULL    COMMENT 'boardnum', 
+    `title`     VARCHAR(45)    NULL        COMMENT 'title', 
+    `writer`    VARCHAR(45)    NULL        COMMENT 'writer', 
+    PRIMARY KEY (boardnum)
+);
+
+ALTER TABLE board
+    ADD CONSTRAINT FK_board_writer_member_id FOREIGN KEY (writer)
+        REFERENCES member (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+

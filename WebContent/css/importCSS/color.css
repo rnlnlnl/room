@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+	color: #8d4d29;
+	background-color: #faeacd47;
+}
+
+a {
+	color: #98644d;
+}
+
+/* 일반 내용 배경 */
+.background {
+	background-color: #faeacd47;
+}
+
+/* 제목이나 작성자 색 */
+.subject { 
+	color: #8d4d29;
+}
+
+/* 메뉴바 색상 */
+.menu{
+	background-color: #e8cfb0;
+}
+
+/* 버튼 속 글씨색 */

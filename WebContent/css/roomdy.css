@@ -1,0 +1,1171 @@
+@charset "UTF-8";
+
+/* 폰트 css */
+@import url("importCSS/font.css");
+
+@import url("importCSS/color.css");
+
+/* 여러 군데 사용 가능한 css */
+.initDisplayNone {
+	display: none;
+}
+
+.padding-left100 {
+	padding-left: 100px;
+}
+
+textarea.writewid {
+	height: 200px;
+}
+
+.btn, button {
+	cursor: pointer;
+	border: none;
+	background-color: #98644d;
+	color: #faeacd;
+	height: 2em;
+}
+
+.verticalAlignTop {
+	vertical-align: top;
+}
+
+hr {
+	height: 2px;
+	background-color: #ecd2c1;
+	border: none;
+	margin: 25px 0;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+/* 회원가입 */
+.authS {
+	display: none;
+}
+
+.defaultBorder {
+	border: 1px solid;
+}
+
+/* roomdyLogo */
+.roomdyLogo {
+	padding-bottom: 9px;
+	width: 180px;
+}
+
+.logoBar {
+	padding-top: 25px;
+}
+
+/* 상품 목록 페이지 */
+#gallery * {
+	transition: none;
+}
+
+#gallery .heading {
+	margin: 20px 0 30px 0;
+	font-size: 3em;
+}
+
+#filterBox {
+	height: 150px;
+	width: 100%;
+	border: 1px dotted;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#sortBox label {
+	padding: 4px 10px;
+	border-radius: 10px;
+	color: #572e17;
+	transition
+}
+
+#sortBox label.active {
+	background-color: #572e17;
+	color: #fff;
+}
+
+#sortBox input[type='radio'] {
+	display: none;
+}
+
+#gallery img {
+	object-fit: cover;
+	height: 220px;
+	width: 220px;
+}
+
+.oneItem {
+	line-height: 2em;
+}
+
+.oneItem .heartBox {
+	border-radius: 5px;
+	background: none;
+	border: 1px dotted;
+}
+
+.oneItem button {
+	background-color: #0000;
+	color: #98644d;
+}
+
+.oneItem .heartBox {
+	border-radius: 5px;
+	background: none;
+	padding: 0 7px;
+	border: 1px dotted;
+}
+
+.oneItem .heartBox.hearted {
+	background-color: #FF99A3;
+	color: #fff;
+}
+
+.oneItem .heartBox input {
+	display: none;
+}
+
+.oneItem .heartBox>label {
+	margin: 0;
+}
+
+div#page_control a {
+	padding: 5px;
+	font-size: 1.5em;
+}
+
+#sellerItemList {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#sellerItemList img {
+	height: 80px;
+}
+
+#sellerItemList * {
+	font-size: 14px;
+}
+
+.heartRed {
+	color: red;
+}
+
+/* 상품 1개 보기*/
+#productForm>* {
+	height: 500px;
+	border-radius: 10px;
+}
+
+#itemInfo {
+	height: 450px;
+	width: 100%;
+	vertical-align: top;
+	overflow: auto;
+}
+
+#itemRight {
+	height: 500px;
+	width: 57%;
+	border: 1px solid;
+	display: inline-block;
+	vertical-align: bottom;
+	position: relative;
+}
+
+#itemImg {
+	margin-right: 20px;
+	object-fit: cover;
+	width: 40%;
+	height: 500px;
+}
+
+table#itemInfoTable, table#itemInfoTable tr, #itemInfoTable td, table#itemOptTable, table#itemOptTable tr, #itemOptTable td {
+	background-color: #0000;
+	border: none;
+}
+
+#itemInfo #itemAmount {
+	border: none;
+	background-color: #ead0ad;
+	height: 25px;
+	width: 40px;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+#optionSelect {
+	height: 35px;
+	width: 100%;
+}
+
+#itemInfoTable tr:nth-child(2) {
+	height: 50px;
+}
+
+div#calDiv input[type=number] {
+	border: none;
+	background-color: #ead0ad;
+	height: 25px;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+#itemRight hr {
+	margin: 10px 0;
+}
+
+#itemInfoTable tr:nth-child(2)>td {
+	vertical-align: bottom;
+}
+
+#itemInfoTable th {
+	font-size: 2em;
+	height: 50px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+#itemInfoTable th>small {
+	font-size: medium;
+}
+
+.itemBtnBox {
+	width: 95%;
+	padding-right: 10px;
+	margin: 5px 10px;
+}
+
+.itemBtnBox button {
+	width: 80px;
+	padding: px 0;
+	padding: 7px 0;
+	height: auto;
+	border-radius: 10px;
+	margin-left: 7px;
+}
+/* 비밀번호 변경 박스 */
+#modPwBox {
+	position: fixed;
+	border: 2px solid;
+	left: 48%;
+}
+
+.modPwd {
+	padding: 4%;
+	background-color: antiquewhite;
+}
+
+.closeModPwBox {
+	width: 100%;
+	color: #4d5398;
+	text-align: right;
+	padding: 0 10px 0 320px;
+}
+
+.modPadTop {
+	padding-top: 10px;
+}
+
+/* 로그인 */
+.loginPopup {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 60px;
+}
+
+.loginSpace {
+	background-color: #fefefe;
+	margin: 5% auto;
+	border: 1px solid;
+	width: 20%;
+	padding: 1%;
+	line-height: 3em;
+}
+
+.loginSpace input {
+	width: 100%;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.loginSpace label {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+button#loginSub {
+	margin: 5px 0;
+	width: 40%;
+	border-radius: 10px;
+	height: 2.5em;
+}
+
+.rememberBox {
+	margin-top: 5px;
+}
+
+.rememberBox>* {
+	margin: 0;
+	margin-right: 5px;
+	width: auto;
+}
+
+.rememberBox .memberIdRemember {
+	margin: 0;
+}
+
+input#idRemember {
+	width: 17px;
+}
+
+/* 검색창 */
+#searchBox * {
+	display: inline-block;
+	height: 30px;
+	margin: 3px 5px 0 0;
+	border-radius: 5px;
+	border: none;
+	padding: 0 10px;
+}
+
+#searchBox>input {
+	width: 200px;
+}
+
+#searchBox>button {
+	width: 50px;
+}
+/* 장바구니 페이지 */
+#cartDiv .options {
+	font-size: small;
+	color: gray;
+}
+
+#cartDiv .itemDiv {
+	border-bottom: 1px solid;
+}
+
+#cartDiv .delOptBtn {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+#cartDiv .itemImg {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+}
+
+#cartDiv .itemCheck {
+	float: left;
+	padding-top: 50px;
+}
+
+#cartDiv .itemDiv {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/* 쪽지함 */
+#letterBox a {
+	color: #333;
+}
+
+div#letterBox {
+	margin: 10px 20px;
+}
+
+#letterBox ul>li {
+	float: left;
+	border-left: 4px solid;
+	padding-left: 10px;
+	width: 33.3%;
+	box-sizing: border-box;
+}
+
+#letterBox>nav {
+	margin-bottom: 20px;
+}
+
+#recipientDiv {
+	width: 85%;
+	height: 2em;
+}
+
+#sellerBox {
+	position: fixed;
+	top: 26%;
+	width: 40%;
+	right: 20px;
+}
+
+.closeTableBtn {
+	margin: 0 5px;
+	background-color: #ccc;
+	float: right;
+}
+
+#recipientDiv>input {
+	width: 65%;
+	margin-right: 2% !important;
+}
+
+#letterBox #writeLetter input, #letterBox form>textarea {
+	display: inline-block;
+	border: none;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+
+#letterBox #writeLetter>input, #letterBox form>textarea {
+	width: 85%;
+}
+
+#letterBox form>span, #readLetterBox span {
+	display: inline-block;
+	text-align: right;
+	width: 14%;
+	padding: 2px 5px 0 0;
+	height: 2em;
+}
+
+#letterBox #writeLetter input {
+	height: 2em;
+}
+
+#letterBox form>textarea {
+	height: 300px;
+	margin-top: 10px;
+}
+
+.btnBox {
+	position: fixed;
+	right: 4%;
+	bottom: 4%;
+}
+
+.btnBox>button {
+	width: 75px;
+	height: 30px;
+	border: none;
+	margin-left: 10px;
+}
+
+div#readLetterBox>span, div#readLetterBox>p {
+	display: inline-block;
+	margin: 7px 0;
+	padding: 0 5px;
+}
+
+div#readLetterBox>p {
+	width: 85%;
+	height: 2em;
+	border: 1px dotted;
+}
+
+#contentBox {
+	padding: 0 10px;
+	width: 100%;
+	height: 250px;
+	border: 1px dotted;
+}
+
+.replyRec {
+	width: 100% !important;
+	background-color: #ddd;
+}
+
+/* index 배너 */
+#slideBox {
+	height: 500px;
+	background-position-y: 40%;
+}
+
+#slideButtonBox {
+	position: relative;
+	bottom: 45%;
+	left: 2%;
+	display: block;
+	color: black;
+	font-size: 30px;
+}
+
+}
+
+/* 상품 후기 */
+.reviewBox>.textBox {
+	height: 100%;
+	font-size: 1.2em;
+	margin-left: 20px;
+}
+
+.reviewBox>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.textBox>div>p {
+	padding-right: 25px;
+	margin: 0;
+}
+
+.textBox>p {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.reviewBox {
+	margin: 5px auto;
+	width: 100%;
+	height: 125px;
+	padding: 5px 20px 10px;
+	border-bottom: 1px solid;
+}
+
+.reviewBox>.imgBox {
+	width: 35%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.reviewBox .textBox {
+	width: 60%;
+}
+
+/* 상품 후기 상세보기 페이지 */
+#reviewDiv {
+	border-radius: 5px;
+	background: #eee;
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+
+.reviewImg {
+	height: 400px;
+	width: 80%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.contentBox {
+	border-radius: 5px;
+	height: 300px;
+	padding: 10px 15px;
+	background-color: #fff;
+}
+
+.reviewSlidButtonBox {
+	position: relative;
+	font-size: 60px;
+	top: 200px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.value {
+	color: #000;
+}
+
+/* 메인 화면 */
+.mainReviewImg {
+	height: 220px;
+	width: 320px;
+	background-size: cover;
+	background-position: center;
+}
+
+.styleImg {
+	height: 200px;
+	width: 320px;
+	background-size: cover;
+	background-position: center;
+}
+
+#headerButton a {
+	color: #fff;
+}
+
+/* joinForm 약관동의 스크롤바 */
+#sec01>p {
+	border: 1px solid;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	background-color: #fff;
+	background-size: 64px 45px;
+	color: black;
+	font-size: 10px;
+	/* font-style:bold; */
+	overflow: auto; /*영역 넘치는 내용 제어*/
+	line-height: 1.8;
+}
+
+.looked {
+	color: red;
+}
+
+.act01 {
+	background-attachment: scroll;
+}
+
+/* joinForm 디자인*/
+#section, .joinPageForm {
+	padding: 3% 30%;
+}
+
+#sectionDel {
+	padding: 2% 30%;
+}
+
+#sectionDels {
+	padding: 0 30%;
+}
+
+.defaultBorder {
+	border: none;
+}
+
+#authBuyer>nav, #authBuyer input, #typeList label, #typeList input, #typeList span {
+	display: inline-block;
+}
+
+#joinFontSize {
+	font-size: 20px;
+}
+
+.boxSize {
+	width: 100%;
+	height: 45px;
+}
+
+.box_size {
+	width: 88%;
+	height: 45px;
+}
+
+.buttonBox {
+	width: 11%;
+	height: 45px;
+}
+
+.typeB_S input[type="radio"] {
+	display: none !important;
+}
+
+.typeB_S input[type="radio"]+span {
+	display: inline-block !important;
+	background: none;
+	border: 0 solid #888888;
+	text-align: center;
+	height: 35px;
+	line-height: 33px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.typeB_S input[type="radio"]:checked+span {
+	border: 1px solid #98644d;
+	background: #98644d;
+	color: #fff;
+}
+
+label span {
+	color: #98644d;
+	background-color: inherit;
+}
+
+.spanW {
+	padding: 0px 150px;
+}
+
+#authBuyer {
+	width: 100%;
+}
+
+.spanw {
+	padding: 0 61px;
+}
+
+#hrLine {
+	width: 665px;
+}
+
+.findInfo {
+	padding: 15px 30px;
+}
+
+.divMar {
+	margin: 1%;
+}
+
+#delMemberConfirmBox {
+	margin: -12% 0;
+}
+
+.typeListWid {
+	width: 88%;
+	height: 45px;
+}
+
+.modifyMem {
+	border: 1px solid;
+	text-align: center;
+	height: 45px;
+	padding-top: 1.45%;
+}
+/*listMember.jsp*/
+.cls1 {
+	padding: 1% 3%;
+	font-size: 20px;
+}
+
+.listMemberTable {
+	border: double;
+}
+
+.listMemberTr {
+	text-align: center;
+	vertical-align: middle;
+	font-size: large;
+	border-bottom: 2px solid;
+}
+
+.listTd_1 {
+	width: 1%;
+}
+
+.listTd3 {
+	width: 3%;
+}
+
+.listTd4 {
+	width: 4%;
+}
+
+.listTd5 {
+	width: 5%;
+}
+
+.listTd6 {
+	width: 6%;
+}
+
+.listTd7 {
+	width: 7%;
+}
+
+.listTd8 {
+	width: 8%;
+}
+
+.listTd10 {
+	width: 10%;
+}
+
+.listTd13 {
+	width: 10%;
+}
+
+.listTd20 {
+	width: 20%;
+}
+
+.listTd30 {
+	width: 30%;
+}
+
+.listTd40 {
+	width: 40%;
+}
+
+.listMemberIn>td {
+	vertical-align: middle;
+}
+
+#listMemberJD {
+	text-align: center;
+}
+
+/*csCenter.jsp*/
+.csCenter {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h1.noticeTitle {
+	font-size: 1.4em;
+}
+
+/*notice.jsp*/
+.tableMargin {
+	margin: 0 11%;
+}
+
+.noticeTitle, .listCenter {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.Centernone {
+	text-align: left !important;
+}
+
+.tableForm {
+	padding: 0.5% 3%;
+}
+
+.buttonPoLe {
+	padding: 0% 70%;
+}
+
+.buttonLeft {
+	width: 95px;
+}
+
+/*writePost.jsp*/
+.tableFormWrite {
+	padding: 4% 3%;
+}
+
+#divList>input {
+	display: inline-block !important;
+}
+
+#divList {
+	text-align: center;
+}
+
+.writewidTitle {
+	height: 40px;
+	width: 100%;
+}
+
+textarea#content {
+	height: 100px;
+	display: block;
+	width: 100%;
+}
+
+.wordPoCen {
+	vertical-align: middle;
+	text-align: center;
+}
+
+#widSelect, .writewid {
+	width: 100%;
+}
+
+.postFontSizeTi {
+	font-size: 15px;
+}
+
+td.noteNothing {
+	padding: 2% 44%;
+	font-size: 1.3em;
+}
+
+.starrating {
+	width: 131.48777px;
+	height: 19px;
+	padding-left: 1.5px;
+}
+
+.postPosi {
+	height: 300px;
+	vertical-align: middle;
+	padding:
+}
+
+/*readPost.jsp*/
+.readTableSize {
+	width: 85%;
+}
+
+.readIn {
+	height: 350px;
+}
+
+.verMiddle {
+	vertical-align: middle;
+}
+
+.readBuLis {
+	display: inline-flex;
+}
+
+.readbut {
+	padding: 1px 6px;
+	margin: 20px 7px;
+}
+
+.writeButton {
+	margin: 3px;
+}
+
+.writeBu {
+	margin: 1%;
+}
+
+/*qna.jap*/
+.buttonPoRig {
+	padding: 0.5% 75%;
+}
+
+.listButton {
+	margin: 0 60%;
+	width: 100%;
+}
+
+.container1 {
+	padding: 10px 0;
+}
+
+.content {
+	margin-bottom: 10%;
+}
+
+thead {
+	border-bottom: 2px solid;
+}
+
+.tableLineDo {
+	border-bottom: 1px dashed;
+}
+
+.tableLineSo {
+	border-bottom: 1px solid;
+}
+
+.content {
+	margin-bottom: 0;
+}
+
+.marginBo {
+	margin-bottom: 13px;
+}
+
+.myPageRe {
+	height: 45px
+}
+
+.paddingBo {
+	padding-bottom: 15px;
+}
+
+.oderDay {
+	padding: 0 24%;
+}
+
+.margin50 {
+	margin: 50%;
+}
+
+.margin10 {
+	margin: 0 10%;
+}
+
+.margin2 {
+	margin: 2%;
+}
+
+.buttonPadd {
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 50%;
+}
+
+.letterBg {
+	cursor: pointer;
+	color: #faeacd;
+	height: 2em;
+}
+
+.wordPoCen>p {
+	display: inline-block;
+}
+
+.blockTd {
+	display: block !important;
+}
+
+button#plusFileBtn, .minusFileBtn {
+	display: inline-block;
+	background-color: whitesmoke;
+	color: #8d4e33;
+}
+
+.searchImgSize {
+	width: 50px;
+	object-fit: cover;
+	height: 50px;
+}
+
+.hrMargin10 {
+	margin: 10px 0;
+}
+
+.accord {
+	border-bottom: 1px solid #fff;
+	height: 50px;
+	width: 100%;
+	font-size: 1.2em;
+	padding: 0 15px;
+	text-align: left;
+}
+
+.panel {
+	display: none;
+	padding: 0 18px;
+	margin-bottom: 5px;
+}
+
+/* itemshowroom 필터 */
+#filterBox label, #filterBox input {
+	display: inline-block;
+	width: 70px;
+	border: 1px solid;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#filterBox input {
+	height: 25px;
+	width: 40px;
+	background: none;
+	margin-right: 5px;
+}
+
+#filterBox label>input {
+	display: none;
+}
+
+#filterBox input::-webkit-outer-spin-button, #filterBox input::-webkit-inner-spin-button {
+	/* number 증감 버튼 삭제 */
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#filterBox table tr>td:nth-child(1) {
+	text-align: right;
+	border-right: 4px double;
+	padding: 10px;
+	width: 120px;
+}
+
+#filterBtn {
+	position: relative;
+	bottom: 33%;
+	left: 92%;
+	border-radius: 20px;
+}
+
+#filterBox table {
+	border: none;
+	height: 100%;
+}
+
+#filterBox td, #filterBox tr {
+	border: none;
+	background-color: #0000;
+}
+
+#sortBox label.active, #filterBox label.active {
+	background-color: #572e17;
+	color: #fff;
+}
+
+#page_control .nowPage {
+	color: #fe8b57;
+}
+
+.pointBackColor {
+	background-color: #fe8b57 !important;
+	color: #fff;
+}
+
+.active a {
+	color: white
+}
+
+#headerButton .letterBtn {
+	background-color: #0000;
+	margin-left: 5px;
+	color: #fff;
+}
+
+.paddingLe3 {
+	padding-left: 3%;
+}
+
+/* recomend.jsp */
+.top {
+	display: inline;
+	font-size: 20px;
+	font: bold;
+	font
+}
+
+.itemName {
+	padding-right: 100px;
+	padding-left: 20px;
+}
+
+.seller {
+	padding-right: 100px;
+}
+
+.itemInfoDiv {
+	padding-right: 100px;
+	width: 100%;
+	font-size: 15px;
+	display: inline;
+	position: absolute;
+	bottom: 0px;
+}
+
+.itemDivRecomend {
+	float: left;
+	height: 400px;
+	position: relative;
+	background-color: #ffecec;
+	border-radius: 10px;
+	margin: 5px;
+	width: 18.699387%;
+}
+
+.nameRecomend {
+	width: 100px;
+}
+
+.recomendTable {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.bestProduct {
+	margin: 55px;
+	font-size: 40px;
+}
