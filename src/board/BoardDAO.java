@@ -452,7 +452,7 @@ public class BoardDAO {
 			if (itemNo > 0) {
 				sql += "and dyitem.itemno = ? ";
 			}
-
+			
 			sql += "order by writeDate desc limit ?, ?";
 
 			pst = conn.prepareStatement(sql);
